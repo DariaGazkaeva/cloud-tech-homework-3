@@ -60,7 +60,7 @@ resource "yandex_compute_instance" "server" {
 
   resources {
     core_fraction = 20
-    cores         = 2
+    cores         = 4
     memory        = 4
   }
 

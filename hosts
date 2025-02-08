@@ -1,1 +1,1 @@
-server  ansible_host=158.160.166.139   ansible_user=ubuntu    ansible_connection=ssh
+server  ansible_host=51.250.34.239  ansible_user=ubuntu    ansible_connection=ssh
