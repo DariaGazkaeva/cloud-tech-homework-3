@@ -1,0 +1,26 @@
+- name: Nextcloud
+  hosts: server
+  tasks:
+    - name: Timezone settings
+      community.general.timezone:
+        name: Europe/Moscow
+    - name: Upgrade Software
+      ansible.builtin.apt:
+        update_cache: true
+        upgrade: yes
+    - name: Install packages
+      ansible.builtin.apt:
+        pkg:
+          - unzip
+          - apache2
+          - libapache2-mod-php
+          - php-curl
+          - php-gd
+          - php-json
+          - php-mbstring
+          - php-xml
+          - php-zip
+          - php-pgsql
+          - postgresql-all
+
+        state: present
